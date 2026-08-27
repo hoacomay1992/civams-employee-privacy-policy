@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — CIVAMS Face Employee</title>
+<style>
+  :root {
+    --bg:#fff; --bg-soft:#f6f7f9; --fg:#1c1f23; --fg-muted:#5b6570;
+    --border:#dfe3e8; --accent:#1a6fd4; --accent-soft:#e8f1fc;
+    --warn:#b45309; --warn-soft:#fdf3e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#14171a; --bg-soft:#1c2024; --fg:#e6e8ea; --fg-muted:#9aa4ae;
+      --border:#2c3238; --accent:#64a6f0; --accent-soft:#17293d;
+      --warn:#e0a458; --warn-soft:#2e2519;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:840px;margin:0 auto;padding:40px 22px 80px}
+  header{border-bottom:1px solid var(--border);padding-bottom:20px;margin-bottom:8px}
+  h1{font-size:27px;line-height:1.25;margin:0 0 6px}
+  .sub{color:var(--fg-muted);margin:0}
+  h2{font-size:20px;margin:38px 0 12px;padding-top:18px;border-top:1px solid var(--border)}
+  h3{font-size:16px;margin:22px 0 8px}
+  p,li{margin:10px 0}
+  a{color:var(--accent)}
+  code{background:var(--bg-soft);border:1px solid var(--border);border-radius:4px;padding:.1em .35em;
+       font:.875em ui-monospace,SFMono-Regular,Menlo,monospace}
+  .table-scroll{overflow-x:auto;margin:14px 0}
+  table{border-collapse:collapse;width:100%;font-size:14.5px}
+  th,td{border:1px solid var(--border);padding:8px 12px;text-align:left;vertical-align:top}
+  th{background:var(--bg-soft);font-weight:600}
+  .note,.warn{border-left:3px solid;border-radius:0 6px 6px 0;padding:12px 16px;margin:18px 0}
+  .note{border-color:var(--accent);background:var(--accent-soft)}
+  .warn{border-color:var(--warn);background:var(--warn-soft)}
+  .note>:first-child,.warn>:first-child{margin-top:0}
+  .note>:last-child,.warn>:last-child{margin-bottom:0}
+  .langbar{display:flex;gap:8px;margin:18px 0 0}
+  .langbar button{font:inherit;font-size:14px;padding:6px 16px;border-radius:999px;cursor:pointer;
+       border:1px solid var(--border);background:var(--bg-soft);color:var(--fg-muted)}
+  .langbar button[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+  [lang]:not([lang=""]).hidden{display:none}
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--border);color:var(--fg-muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Chính sách quyền riêng tư <span class="sub" style="font-weight:400">/ Privacy Policy</span></h1>
+  <p class="sub">CIVAMS Face Employee</p>
+  <div class="langbar">
+    <button id="btn-vi" aria-pressed="true" onclick="setLang('vi')">Tiếng Việt</button>
+    <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<!-- ══════════════════════════ TIẾNG VIỆT ══════════════════════════ -->
+<section lang="vi">
+
+<p><strong>Ngày hiệu lực:</strong> 20-01-2022</p>
+
+<h2>1. Về ứng dụng này</h2>
+
+<p>CIVAMS Face Employee là ứng dụng chấm công bằng nhận diện khuôn mặt, do
+<strong>Viện Nghiên cứu và Ứng dụng Công nghệ CMC</strong> (CMC Institute of Science and Technology)
+phát triển và cung cấp cho các tổ chức sử dụng nội bộ.</p>
+
+<div class="note">
+  <p><strong>Vai trò xử lý dữ liệu.</strong> Ứng dụng được triển khai riêng cho từng tổ chức, và dữ
+  liệu của bạn được lưu trên <strong>máy chủ của chính tổ chức nơi bạn làm việc</strong>, không phải
+  máy chủ dùng chung. Trong quan hệ này, tổ chức sử dụng lao động là bên kiểm soát dữ liệu, còn nhà
+  phát triển ứng dụng là bên xử lý dữ liệu theo hợp đồng.</p>
+  <p>Nghĩa là: các câu hỏi về việc dữ liệu của bạn được giữ bao lâu, ai được xem, và làm sao để xoá,
+  cần hỏi <strong>bộ phận nhân sự hoặc quản trị hệ thống của tổ chức bạn</strong> trước tiên.</p>
+</div>
+
+<h2>2. Dữ liệu ứng dụng thu thập</h2>
+
+<h3>2.1 Dữ liệu sinh trắc học — ảnh khuôn mặt</h3>
+
+<p>Đây là dữ liệu nhạy cảm nhất mà ứng dụng xử lý, và là chức năng cốt lõi của nó.</p>
+
+<div class="table-scroll">
+<table>
+  <tbody>
+    <tr><th style="width:180px">Thu thập gì</th><td>Ảnh khuôn mặt của bạn, chụp ở tối đa 6 góc khác nhau khi đăng ký, và ảnh chụp mỗi lần chấm công</td></tr>
+    <tr><th>Vì sao</th><td>Để nhận diện đúng nhân viên của tổ chức, ghi nhận giờ làm việc và xác định giờ công chuẩn. Hệ thống cũng dùng ảnh để kiểm tra ảnh chấm công có đúng là bạn hay không</td></tr>
+    <tr><th>Gửi đi đâu</th><td>Máy chủ của tổ chức nơi bạn làm việc. Ảnh được tải lên để kiểm tra chất lượng và để lưu vào hồ sơ nhận diện của bạn</td></tr>
+    <tr><th>Chống giả mạo</th><td>Việc kiểm tra ảnh thật hay ảnh chụp lại được thực hiện <strong>trên máy chủ</strong>, không phải trên điện thoại</td></tr>
+    <tr><th>Lưu bao lâu</th><td>Đến khi bạn không còn là nhân viên của tổ chức</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>2.2 Thông tin tài khoản</h3>
+
+<p>Họ tên, email, số điện thoại, ngày sinh, giới tính, ảnh đại diện, phòng ban và công ty. Những
+thông tin này do tổ chức của bạn tạo lập, ứng dụng chỉ hiển thị và cho phép cập nhật.</p>
+
+<h3>2.3 Vị trí</h3>
+
+<p>Khi bạn chấm công, ứng dụng đọc vị trí thiết bị để ghi nhận nơi chấm công. Vị trí
+<strong>chỉ được đọc tại thời điểm bạn thao tác chấm công</strong>, ứng dụng không theo dõi vị trí
+chạy nền.</p>
+
+<h3>2.4 Camera và thư viện ảnh</h3>
+
+<p>Camera dùng để chụp khuôn mặt khi đăng ký và khi chấm công. Thư viện ảnh dùng khi bạn chọn ảnh
+đại diện. Ứng dụng không truy cập ảnh nào khác ngoài ảnh bạn chủ động chọn.</p>
+
+<h3>2.5 Thông tin thiết bị và kỹ thuật</h3>
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th style="width:230px">Loại</th><th>Mục đích</th></tr></thead>
+  <tbody>
+    <tr><td>Model máy, phiên bản hệ điều hành</td><td>Hỗ trợ kỹ thuật và xử lý sự cố</td></tr>
+    <tr><td>Mã thông báo đẩy (push token)</td><td>Gửi thông báo về đơn giải trình, duyệt công</td></tr>
+    <tr><td>Trạng thái kết nối mạng</td><td>Báo cho bạn khi mất kết nối</td></tr>
+    <tr><td>Nhật ký lỗi và sự cố</td><td>Phát hiện và sửa lỗi ứng dụng</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. Dịch vụ bên thứ ba</h2>
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th style="width:170px">Dịch vụ</th><th style="width:120px">Nhà cung cấp</th><th>Dùng để làm gì</th></tr></thead>
+  <tbody>
+    <tr><td>Firebase Cloud Messaging</td><td>Google</td><td>Gửi thông báo đẩy</td></tr>
+    <tr><td>Firebase Remote Config</td><td>Google</td><td>Cấu hình từ xa: địa chỉ máy chủ, thông báo có bản cập nhật</td></tr>
+    <tr><td>Firebase Analytics</td><td>Google</td><td>Thống kê sử dụng ở dạng tổng hợp</td></tr>
+    <tr><td>Sentry</td><td>Sentry</td><td>Báo cáo lỗi và sự cố ứng dụng</td></tr>
+    <tr><td>ML Kit / MediaPipe</td><td>Google</td><td>Dò khuôn mặt <strong>ngay trên máy</strong> để căn khung khi chụp. Không gửi ảnh đi đâu</td></tr>
+    <tr><td>Dịch vụ định vị</td><td>Google / Apple</td><td>Xác định vị trí chấm công</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Sentry nhận nhật ký lỗi kỹ thuật. Chức năng quay lại phiên làm việc và chụp màn hình
+<strong>đã được tắt</strong> trên bản phát hành.</p>
+
+<h2>4. Chia sẻ dữ liệu</h2>
+
+<p>Ứng dụng <strong>không bán</strong> dữ liệu cá nhân và không chia sẻ cho mục đích quảng cáo. Dữ
+liệu chỉ được chia sẻ trong các trường hợp:</p>
+
+<ul>
+  <li>Với tổ chức nơi bạn làm việc — đây là bên sở hữu dữ liệu chấm công của bạn</li>
+  <li>Với các nhà cung cấp dịch vụ liệt kê ở mục 3, trong phạm vi cần thiết để ứng dụng hoạt động</li>
+  <li>Khi pháp luật yêu cầu</li>
+</ul>
+
+<h2>5. Quyền của bạn</h2>
+
+<p>Bạn có quyền yêu cầu xem, sửa hoặc xoá dữ liệu cá nhân của mình, bao gồm cả ảnh khuôn mặt đã đăng
+ký. Vì dữ liệu nằm trên hệ thống của tổ chức bạn, hãy gửi yêu cầu tới bộ phận nhân sự hoặc quản trị
+hệ thống của tổ chức. Nếu cần hỗ trợ kỹ thuật, liên hệ
+<a href="mailto:cist.dev@cmc.com.vn">cist.dev@cmc.com.vn</a>.</p>
+
+<h2>6. Bảo mật</h2>
+
+<p>Kết nối giữa ứng dụng và máy chủ được mã hoá. Phiên đăng nhập tự hết hạn sau một khoảng thời gian
+không thao tác. Mật khẩu lưu trên máy được mã hoá.</p>
+
+<p>Tuy nhiên không có phương thức truyền tải hay lưu trữ điện tử nào an toàn tuyệt đối, nên chúng tôi
+không thể cam kết bảo mật tuyệt đối.</p>
+
+<h2>7. Trẻ em</h2>
+
+<p>Ứng dụng dành cho người lao động trong tổ chức và không hướng tới trẻ em dưới 16 tuổi.</p>
+
+<h2>8. Liên kết tới trang khác</h2>
+
+<p>Ứng dụng có thể chứa liên kết tới trang của bên thứ ba. Các trang đó không do chúng tôi vận hành,
+nên chúng tôi khuyến nghị bạn đọc chính sách quyền riêng tư của họ. Chúng tôi không kiểm soát và
+không chịu trách nhiệm về nội dung hay cách xử lý dữ liệu của bất kỳ trang bên thứ ba nào.</p>
+
+<h2>9. Thay đổi chính sách</h2>
+
+<p>Chính sách này có thể được cập nhật. Bản mới sẽ được đăng tại chính trang này kèm ngày hiệu lực
+mới.</p>
+
+<h2>10. Liên hệ</h2>
+
+<p><strong>Viện Nghiên cứu và Ứng dụng Công nghệ CMC</strong><br>
+CMC Institute of Science and Technology<br>
+Email: <a href="mailto:cist.dev@cmc.com.vn">cist.dev@cmc.com.vn</a><br>
+Điện thoại: <a href="tel:+84326295509">+84 326 295 509</a></p>
+
+</section>
+
+<!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
+<section lang="en" class="hidden">
+
+<p><strong>Effective date:</strong> 20 January 2022</p>
+
+<h2>1. About this app</h2>
+
+<p>CIVAMS Face Employee is a face-recognition attendance app built by
+<strong>CMC Institute of Science and Technology</strong> and supplied to organisations for internal use.</p>
+
+<div class="note">
+  <p><strong>Who controls your data.</strong> The app is deployed separately for each organisation,
+  and your data is held on <strong>your employer's own server</strong>, not on a shared one. Your
+  employer is the data controller; the app vendor acts as a processor under contract.</p>
+  <p>In practice: questions about how long your data is kept, who can see it and how to have it
+  deleted should go to <strong>your organisation's HR or system administrator</strong> first.</p>
+</div>
+
+<h2>2. What the app collects</h2>
+
+<h3>2.1 Biometric data — face images</h3>
+
+<div class="table-scroll">
+<table>
+  <tbody>
+    <tr><th style="width:180px">What</th><td>Images of your face, captured from up to six angles during enrolment, plus the photo taken each time you check in</td></tr>
+    <tr><th>Why</th><td>To identify the right employees of the organisation, record working hours and determine standard hours. The system also uses the images to confirm a check-in photo is really you</td></tr>
+    <tr><th>Where it goes</th><td>Your employer's server. Images are uploaded for a quality check and to build your recognition profile</td></tr>
+    <tr><th>Anti-spoofing</th><td>Checking whether a photo is live or a replay happens <strong>on the server</strong>, not on the phone</td></tr>
+    <tr><th>Retention</th><td>Until you are no longer an employee of the organisation</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>2.2 Account information</h3>
+
+<p>Name, email, phone number, date of birth, gender, avatar, department and company. Your
+organisation creates these records; the app displays them and lets you update them.</p>
+
+<h3>2.3 Location</h3>
+
+<p>When you check in, the app reads the device location to record where the check-in happened.
+Location is read <strong>only at the moment you check in</strong>; the app does no background
+tracking.</p>
+
+<h3>2.4 Camera and photo library</h3>
+
+<p>The camera is used to capture your face during enrolment and check-in. The photo library is used
+when you pick an avatar. The app reads no other images.</p>
+
+<h3>2.5 Device and technical information</h3>
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th style="width:230px">Type</th><th>Purpose</th></tr></thead>
+  <tbody>
+    <tr><td>Device model, OS version</td><td>Support and troubleshooting</td></tr>
+    <tr><td>Push notification token</td><td>Delivering notifications about attendance requests and approvals</td></tr>
+    <tr><td>Network connectivity state</td><td>Telling you when the connection drops</td></tr>
+    <tr><td>Crash and error logs</td><td>Finding and fixing defects</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>3. Third-party services</h2>
+
+<div class="table-scroll">
+<table>
+  <thead><tr><th style="width:170px">Service</th><th style="width:120px">Provider</th><th>Used for</th></tr></thead>
+  <tbody>
+    <tr><td>Firebase Cloud Messaging</td><td>Google</td><td>Push notifications</td></tr>
+    <tr><td>Firebase Remote Config</td><td>Google</td><td>Remote settings: server address, update notices</td></tr>
+    <tr><td>Firebase Analytics</td><td>Google</td><td>Aggregate usage statistics</td></tr>
+    <tr><td>Sentry</td><td>Sentry</td><td>Crash and error reporting</td></tr>
+    <tr><td>ML Kit / MediaPipe</td><td>Google</td><td>Face detection <strong>on the device</strong> to frame the shot. No image leaves the phone for this</td></tr>
+    <tr><td>Location services</td><td>Google / Apple</td><td>Determining check-in location</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Sentry receives technical error logs. Session replay and screenshot capture are
+<strong>switched off</strong> in released builds.</p>
+
+<h2>4. Sharing</h2>
+
+<p>The app does <strong>not sell</strong> personal data and shares nothing for advertising. Data is
+shared only:</p>
+
+<ul>
+  <li>With the organisation you work for, which owns your attendance records</li>
+  <li>With the service providers listed in section 3, to the extent the app needs them to work</li>
+  <li>Where the law requires it</li>
+</ul>
+
+<h2>5. Your rights</h2>
+
+<p>You may ask to see, correct or delete your personal data, including enrolled face images. Because
+the data lives on your organisation's system, send the request to its HR department or system
+administrator. For technical help, contact
+<a href="mailto:cist.dev@cmc.com.vn">cist.dev@cmc.com.vn</a>.</p>
+
+<h2>6. Security</h2>
+
+<p>Traffic between the app and the server is encrypted. Sessions expire after a period of inactivity.
+Passwords stored on the device are encrypted.</p>
+
+<p>No method of electronic transmission or storage is completely secure, so absolute security cannot
+be guaranteed.</p>
+
+<h2>7. Children</h2>
+
+<p>The app is intended for employees of an organisation and is not directed at children under 16.</p>
+
+<h2>8. Links to other sites</h2>
+
+<p>The app may contain links to third-party sites. Those sites are not operated by us, so we
+encourage you to read their privacy policies. We have no control over, and take no responsibility
+for, the content or data practices of any third-party site.</p>
+
+<h2>9. Changes to this policy</h2>
+
+<p>This policy may be updated. A new version will be posted on this page with a new effective date.</p>
+
+<h2>10. Contact</h2>
+
+<p><strong>CMC Institute of Science and Technology</strong><br>
+Email: <a href="mailto:cist.dev@cmc.com.vn">cist.dev@cmc.com.vn</a><br>
+Phone: <a href="tel:+84326295509">+84 326 295 509</a></p>
+
+</section>
+
+<footer>
+  <p>CIVAMS Face Employee · <span id="year"></span></p>
+</footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('section[lang]').forEach(function (s) {
+      s.classList.toggle('hidden', s.getAttribute('lang') !== lang);
+    });
+    document.getElementById('btn-vi').setAttribute('aria-pressed', String(lang === 'vi'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.documentElement.setAttribute('lang', lang);
+  }
+  document.getElementById('year').textContent = new Date().getFullYear();
+  if ((navigator.language || '').slice(0, 2) === 'en') setLang('en');
+</script>
+</body>
+</html>
